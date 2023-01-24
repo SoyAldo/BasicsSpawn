@@ -1,0 +1,25 @@
+name: BasicsSpawn
+version: '${project.version}'
+main: com.soyaldo.basicsspawn.BasicsSpawn
+api-version: 1.13
+authors: [ SoyAldo ]
+description: Description
+website: https://soyaldo.com/resources/basics-spawn
+commands:
+  basicsspawnadmin:
+    aliases:
+      - "bsa"
+  basicsspawn:
+    aliases:
+      - "bspawn"
+      - "spawn"
+permissions:
+  basicsspawn.admin:
+    description: "Access to all commands."
+    children:
+      basicsspawn.spawn: true
+      basicsspawn.spawn.other: true
+  basicsspawn.spawn:
+    description: "Access to /spawn command."
+  basicsspawn.spawn.other:
+    description: "Access to /spawn [player] command."

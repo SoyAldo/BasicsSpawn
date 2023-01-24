@@ -1,0 +1,69 @@
+#   ___      _______  __    _  _______
+#  |   |    |   _   ||  |  | ||       |
+#  |   |    |  |_|  ||   |_| ||    ___|
+#  |   |    |       ||       ||   | __
+#  |   |___ |       ||  _    ||   ||  |
+#  |       ||   _   || | |   ||   |_| |
+#  |_______||__| |__||_|  |__||_______|
+#
+# Author: SoyAldo
+# Version: 1.0.0-STABLE
+
+admin:
+  noPermission: "&8[&6&lBasics&f&lSpawn&8] &cYou are not allowed to use this command."
+  emptyOption: "&8[&6&lBasics&f&lSpawn&8] &cThe option are empty."
+  invalidOption: "&8[&6&lBasics&f&lSpawn&8] &cThe option &8'&7%option%&8' &cis invalid."
+  help:
+    - ""
+    - "&8[&6&lBasics&f&lSpawn&8] &fHelp commands"
+    - ""
+    - " &7/BasicsSpawnAdmin firstjoin toggle &8▸ &fEnable/disable the 'first join' teleport."
+    - " &7/BasicsSpawnAdmin firstjoin setlocation &8▸ &fSet the 'first join' location."
+    - " &7/BasicsSpawnAdmin onjoin toggle &8▸ &fEnable/disable the 'on join' teleport."
+    - " &7/BasicsSpawnAdmin onjoin setlocation &8▸ &fSet the 'on join' location."
+    - " &7/BasicsSpawnAdmin respawn toggle &8▸ &fEnable/disable the 'respawn' teleport."
+    - " &7/BasicsSpawnAdmin respawn toggleoverridebed &8▸ &fEnable/disable override bed in respawn."
+    - " &7/BasicsSpawnAdmin respawn setlocation &8▸ &fSet the 'respawn' location."
+    - " &7/BasicsSpawnAdmin spawn setlocation &8▸&f Set the '/spawn' location."
+    - " &7/BasicsSpawnAdmin status &8▸ &fLook the status from all configuration."
+    - " &7/BasicsSpawnAdmin reload &8▸ &fReload the configuration and language."
+    - " &7/BasicsSpawnAdmin version &8▸ &fLook the current version information."
+    - ""
+  reloaded: "&8[&6&lBasics&f&lSpawn&8] &fThe plugin has been reloaded."
+  status:
+    - ""
+    - "&8[&6&lBasics&f&lSpawn&8] &fStatus information"
+    - ""
+    - " &6&l◇ &7First join status &8▸ &f%firstJoinStatus%"
+    - " &6&l◇ &7First join location &8▸ &f%firstJoinLocation%"
+    - ""
+    - " &6&l◇ &7On join status &8▸ &f%onJoinStatus%"
+    - " &6&l◇ &7On join location &8▸ &f%onJoinLocation%"
+    - ""
+    - " &6&l◇ &7Respawn status &8▸ &f%respawnStatus%"
+    - " &6&l◇ &7Respawn override bed status &8▸ &f%respawnOverrideBed%"
+    - " &6&l◇ &7Respawn location &8▸ &f%respawnLocation%"
+    - ""
+    - " &6&l◇ &7Spawn location &8▸ &f%spawnLocation%"
+    - ""
+  firstJoinEnabled: "&8[&6&lBasics&f&lSpawn&8] &fThe first join has been &a&lEnabled &f."
+  firstJoinDisabled: "&8[&6&lBasics&f&lSpawn&8] &fThe first join has been &c&lDisabled &f."
+  firstJoinEstablished: "&8[&6&lBasics&f&lSpawn&8] &fThe first join location has been established."
+  onJoinEnabled: "&8[&6&lBasics&f&lSpawn&8] &fThe on join has been &a&lEnabled &f."
+  onJoinDisabled: "&8[&6&lBasics&f&lSpawn&8] &fThe on join has been &c&lDisabled &f."
+  onJoinEstablished: "&8[&6&lBasics&f&lSpawn&8] &fThe on join location has been established."
+  respawnEnabled: "&8[&6&lBasics&f&lSpawn&8] &fThe respawn teleport has been &a&lEnabled &f."
+  respawnDisabled: "&8[&6&lBasics&f&lSpawn&8] &fThe respawn teleport has been &c&lDisabled &f."
+  respawnOverrideBedEnabled: "&8[&6&lBasics&f&lSpawn&8] &fThe override bed in respawn has been &a&lEnabled &f."
+  respawnOverrideBedDisabled: "&8[&6&lBasics&f&lSpawn&8] &fThe override bed in respawn has been &c&lDisabled &f."
+  respawnEstablished: "&8[&6&lBasics&f&lSpawn&8] &fThe respawn location has been established."
+  spawnEstablished: "&8[&6&lBasics&f&lSpawn&8] &fThe spawn location has been established."
+  onlyPlayersCanEstablishLocation: "&8[&6&lBasics&f&lSpawn&8] &cOnly players can establish a location."
+spawn:
+  noPermission: "&8[&6&lBasics&f&lSpawn&8] &cYou are not allowed to use this command."
+  noPermissionOther: "&8[&6&lBasics&f&lSpawn&8] &cYou are not allowed to use this command to others players."
+  emptyTarget: "&8[&6&lBasics&f&lSpawn&8] &cThe player name are empty."
+  invalidTarget: "&8[&6&lBasics&f&lSpawn&8] &cThe player &f'&e%target%&f' &cis invalid or disconnected."
+  undefinedLocation: "&8[&6&lBasics&f&lSpawn&8] &cThe spawn location is undefined. &7If you think an error has occurred, please contact the administrator."
+  teleported: "&8[&6&lBasics&f&lSpawn&8] &fYou were teleported to spawn."
+  teleportedOther: "&8[&6&lBasics&f&lSpawn&8] &fYou have teleported to the spawn to player &f'&e%target%&f'&f."

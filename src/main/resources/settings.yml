@@ -1,0 +1,28 @@
+#   _______  _______  _______  _______  ___   __    _  _______  _______
+#  |       ||       ||       ||       ||   | |  |  | ||       ||       |
+#  |  _____||    ___||_     _||_     _||   | |   |_| ||    ___||  _____|
+#  | |_____ |   |___   |   |    |   |  |   | |       ||   | __ | |_____
+#  |_____  ||    ___|  |   |    |   |  |   | |  _    ||   ||  ||_____  |
+#   _____| ||   |___   |   |    |   |  |   | | | |   ||   |_| | _____| |
+#  |_______||_______|  |___|    |___|  |___| |_|  |__||_______||_______|
+#
+# Author: SoyAldo
+# Version: 1.0.0-STABLE
+
+lang: "en_us"
+
+firstJoin:
+  enable: false
+  location: "undefined"
+
+onJoin:
+  enable: false
+  location: "undefined"
+
+respawn:
+  enable: false
+  overrideBed: false
+  location: "undefined"
+
+spawn:
+  location: "undefined"
