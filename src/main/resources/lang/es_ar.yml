@@ -1,0 +1,69 @@
+#   ___      _______  __    _  _______
+#  |   |    |   _   ||  |  | ||       |
+#  |   |    |  |_|  ||   |_| ||    ___|
+#  |   |    |       ||       ||   | __
+#  |   |___ |       ||  _    ||   ||  |
+#  |       ||   _   || | |   ||   |_| |
+#  |_______||__| |__||_|  |__||_______|
+#
+# Author: SoyAldo
+# Version: 1.1.0-STABLE
+
+admin:
+  noPermission: "&8[&6&lBasics&f&lSpawn&8] &cNo se le permite utilizar este comando."
+  emptyOption: "&8[&6&lBasics&f&lSpawn&8] &cLa opción está vacía."
+  invalidOption: "&8[&6&lBasics&f&lSpawn&8] &cLa opción &8'&7%option%&8' &cno es válida."
+  help:
+    - ""
+    - "&8[&6&lBasics&f&lSpawn&8] &fLista de comandos"
+    - ""
+    - " &7/BasicsSpawnAdmin firstjoin toggle &8▸ &fActiva/desactiva la teletransportación 'first join' ."
+    - " &7/BasicsSpawnAdmin firstjoin setlocation &8▸ &fEstablece la ubicación de 'first join' ."
+    - " &7/BasicsSpawnAdmin onjoin toggle &8▸ &fActiva/desactiva la teletransportación 'on join' ."
+    - " &7/BasicsSpawnAdmin onjoin setlocation &8▸ &fEstablece la ubicación de 'on join' ."
+    - " &7/BasicsSpawnAdmin respawn toggle &8▸ &fActiva/desactiva the la teletransportación 'respawn' ."
+    - " &7/BasicsSpawnAdmin respawn toggleoverridebed &8▸ &fActiva/desactiva anular la cama al reaparecer."
+    - " &7/BasicsSpawnAdmin respawn setlocation &8▸ &fEstablece la ubicación de 'respawn' ."
+    - " &7/BasicsSpawnAdmin spawn setlocation &8▸ &fEstablece la ubicación de '/spawn' ."
+    - " &7/BasicsSpawnAdmin status &8▸ &fMira el estado de toda la configuración."
+    - " &7/BasicsSpawnAdmin reload &8▸ &fVuelva a cargar la configuración y el idioma."
+    - " &7/BasicsSpawnAdmin version &8▸ &fMira la información de la versión actual."
+    - ""
+  reloaded: "&8[&6&lBasics&f&lSpawn&8] &fEl complemento ha sido recargado."
+  status:
+    - ""
+    - "&8[&6&lBasics&f&lSpawn&8] &fInformación actual"
+    - ""
+    - " &6&l◇ &7Primera entrada &8▸ &f%firstJoinStatus%"
+    - " &6&l◇ &7Ubicación &8▸ &f%firstJoinLocation%"
+    - ""
+    - " &6&l◇ &7Al entrar &8▸ &f%onJoinStatus%"
+    - " &6&l◇ &7Ubicación &8▸ &f%onJoinLocation%"
+    - ""
+    - " &6&l◇ &7Al reaparecer &8▸ &f%respawnStatus%"
+    - " &6&l◇ &7¿Ignorar camas? &8▸ &f%respawnOverrideBed%"
+    - " &6&l◇ &7Ubicación &8▸ &f%respawnLocation%"
+    - ""
+    - " &6&l◇ &7Ubicación del Spawn &8▸ &f%spawnLocation%"
+    - ""
+  firstJoinEnabled: "&8[&6&lBasics&f&lSpawn&8] &fTEl teletransporte de los nuevos jugadores ha sido &a&lActivada &f."
+  firstJoinDisabled: "&8[&6&lBasics&f&lSpawn&8] &fEl teletransporte de los nuevos jugadores ha sido &c&lDesactivada &f."
+  firstJoinEstablished: "&8[&6&lBasics&f&lSpawn&8] &fSe ha establecido el punto de aparición para los nuevos jugadores."
+  onJoinEnabled: "&8[&6&lBasics&f&lSpawn&8] &fEl teletransporte al entrar al servidor ha sido &a&lActivado &f."
+  onJoinDisabled: "&8[&6&lBasics&f&lSpawn&8] &fEl teletransporte al entrar al servidor ha sido &c&lDesactivada &f."
+  onJoinEstablished: "&8[&6&lBasics&f&lSpawn&8] &fSe ha establecido la ubicación al entrar al servidor."
+  respawnEnabled: "&8[&6&lBasics&f&lSpawn&8] &fEl teletransporte de reaparición ha sido &a&lActivada &f."
+  respawnDisabled: "&8[&6&lBasics&f&lSpawn&8] &fEl teletransporte de reaparición ha sido &c&lDesactivada &f."
+  respawnOverrideBedEnabled: "&8[&6&lBasics&f&lSpawn&8] &fLa anulación de la cama en la reaparición ha sido &a&lActivada &f."
+  respawnOverrideBedDisabled: "&8[&6&lBasics&f&lSpawn&8] &fLa anulación de la cama en la reaparición ha sido &c&lDesactivada &f."
+  respawnEstablished: "&8[&6&lBasics&f&lSpawn&8] &fSe ha establecido la ubicación de reaparición."
+  spawnEstablished: "&8[&6&lBasics&f&lSpawn&8] &fSe ha establecido la ubicación del spawn."
+  onlyPlayersCanEstablishLocation: "&8[&6&lBasics&f&lSpawn&8] &cSolo los jugadores pueden establecer una ubicación."
+spawn:
+  noPermission: "&8[&6&lBasics&f&lSpawn&8] &cNo se le permite utilizar este comando."
+  noPermissionOther: "&8[&6&lBasics&f&lSpawn&8] &cNo se le permite usar este comando en otros jugadores."
+  emptyTarget: "&8[&6&lBasics&f&lSpawn&8] &cEl nombre del jugador está vacío."
+  invalidTarget: "&8[&6&lBasics&f&lSpawn&8] &cEl jugador &f'&e%target%&f' &cno es válido o está desconectado."
+  undefinedLocation: "&8[&6&lBasics&f&lSpawn&8] &cLa ubicación del punto de aparición no está definida. &7Si cree que se ha producido un error, póngase en contacto con el administrador."
+  teleported: "&8[&6&lBasics&f&lSpawn&8] &fFuiste teletransportado para spawn."
+  teleportedOther: "&8[&6&lBasics&f&lSpawn&8] &fHas teletransportado al jugador &f'&e%target%&f'&f al spawn."

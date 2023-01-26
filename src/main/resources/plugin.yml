@@ -4,7 +4,7 @@ main: com.soyaldo.basicsspawn.BasicsSpawn
 api-version: 1.13
 authors: [ SoyAldo ]
 description: Description
-website: https://soyaldo.com/resources/basics-spawn
+website: https://www.spigotmc.org/resources/107590/
 commands:
   basicsspawnadmin:
     aliases:

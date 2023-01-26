@@ -6,6 +6,7 @@ import com.soyaldo.basicsspawn.listeners.PlayerJoin;
 import com.soyaldo.basicsspawn.listeners.PlayerRespawn;
 import com.soyaldo.basicsspawn.util.BrandSender;
 import com.soyaldo.basicsspawn.util.Metrics;
+import com.soyaldo.basicsspawn.util.UpdateChecker;
 import com.soyaldo.basicsspawn.util.Yaml;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -13,6 +14,8 @@ public final class BasicsSpawn extends JavaPlugin {
 
     private final Yaml settings = new Yaml(this, "settings");
     private Yaml lang;
+
+    private final UpdateChecker updateChecker = new UpdateChecker(this, 107590);
 
     @Override
     public void onEnable() {
@@ -30,6 +33,11 @@ public final class BasicsSpawn extends JavaPlugin {
         Metrics metrics = new Metrics(this, 17527);
         // BrandSender
         BrandSender.sendVersionStatusFromConsole(this, "&aEnabled");
+
+        if (updateChecker.getUpdateCheckResult().equals(UpdateChecker.UpdateCheckResult.OUT_DATED)) {
+            updateChecker.sendOutDatedMessage(getServer().getConsoleSender());
+        }
+
     }
 
     @Override

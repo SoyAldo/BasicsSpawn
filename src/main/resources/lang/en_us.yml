@@ -7,7 +7,7 @@
 #  |_______||__| |__||_|  |__||_______|
 #
 # Author: SoyAldo
-# Version: 1.0.0-STABLE
+# Version: 1.1.0-STABLE
 
 admin:
   noPermission: "&8[&6&lBasics&f&lSpawn&8] &cYou are not allowed to use this command."
