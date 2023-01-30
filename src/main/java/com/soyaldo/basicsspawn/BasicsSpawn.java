@@ -2,6 +2,7 @@ package com.soyaldo.basicsspawn;
 
 import com.soyaldo.basicsspawn.commands.Spawn;
 import com.soyaldo.basicsspawn.commands.SpawnAdmin;
+import com.soyaldo.basicsspawn.listeners.EntityDamage;
 import com.soyaldo.basicsspawn.listeners.PlayerJoin;
 import com.soyaldo.basicsspawn.listeners.PlayerRespawn;
 import com.soyaldo.basicsspawn.util.BrandSender;
@@ -29,6 +30,7 @@ public final class BasicsSpawn extends JavaPlugin {
         // Listeners
         getServer().getPluginManager().registerEvents(new PlayerJoin(this), this);
         getServer().getPluginManager().registerEvents(new PlayerRespawn(this), this);
+        getServer().getPluginManager().registerEvents(new EntityDamage(this), this);
         // B Stats
         Metrics metrics = new Metrics(this, 17527);
         // BrandSender
@@ -37,7 +39,6 @@ public final class BasicsSpawn extends JavaPlugin {
         if (updateChecker.getUpdateCheckResult().equals(UpdateChecker.UpdateCheckResult.OUT_DATED)) {
             updateChecker.sendOutDatedMessage(getServer().getConsoleSender());
         }
-
     }
 
     @Override

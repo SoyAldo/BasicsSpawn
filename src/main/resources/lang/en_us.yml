@@ -7,7 +7,7 @@
 #  |_______||__| |__||_|  |__||_______|
 #
 # Author: SoyAldo
-# Version: 1.1.0-STABLE
+# Version: 1.2.0-STABLE
 
 admin:
   noPermission: "&8[&6&lBasics&f&lSpawn&8] &cYou are not allowed to use this command."
@@ -52,6 +52,9 @@ admin:
   onJoinEnabled: "&8[&6&lBasics&f&lSpawn&8] &fThe on join has been &a&lEnabled &f."
   onJoinDisabled: "&8[&6&lBasics&f&lSpawn&8] &fThe on join has been &c&lDisabled &f."
   onJoinEstablished: "&8[&6&lBasics&f&lSpawn&8] &fThe on join location has been established."
+  voidEnabled: "&8[&6&lBasics&f&lSpawn&8] &fThe void has been &a&lEnabled &f."
+  voidDisabled: "&8[&6&lBasics&f&lSpawn&8] &fThe void has been &c&lDisabled &f."
+  voidEstablished: "&8[&6&lBasics&f&lSpawn&8] &fThe void location has been established."
   respawnEnabled: "&8[&6&lBasics&f&lSpawn&8] &fThe respawn teleport has been &a&lEnabled &f."
   respawnDisabled: "&8[&6&lBasics&f&lSpawn&8] &fThe respawn teleport has been &c&lDisabled &f."
   respawnOverrideBedEnabled: "&8[&6&lBasics&f&lSpawn&8] &fThe override bed in respawn has been &a&lEnabled &f."

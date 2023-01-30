@@ -7,7 +7,7 @@
 #  |_______||_______|  |___|    |___|  |___| |_|  |__||_______||_______|
 #
 # Author: SoyAldo
-# Version: 1.1.0-STABLE
+# Version: 1.2.0-STABLE
 
 lang: "en_us"
 
@@ -16,6 +16,10 @@ firstJoin:
   location: "undefined"
 
 onJoin:
+  enable: false
+  location: "undefined"
+
+void:
   enable: false
   location: "undefined"
 

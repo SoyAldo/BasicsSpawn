@@ -7,7 +7,7 @@
 #  |_______||__| |__||_|  |__||_______|
 #
 # Author: SoyAldo
-# Version: 1.1.0-STABLE
+# Version: 1.2.0-STABLE
 
 admin:
   noPermission: "&8[&6&lBasics&f&lSpawn&8] &cNo se le permite utilizar este comando."
@@ -52,6 +52,9 @@ admin:
   onJoinEnabled: "&8[&6&lBasics&f&lSpawn&8] &fEl teletransporte al entrar al servidor ha sido &a&lActivado &f."
   onJoinDisabled: "&8[&6&lBasics&f&lSpawn&8] &fEl teletransporte al entrar al servidor ha sido &c&lDesactivada &f."
   onJoinEstablished: "&8[&6&lBasics&f&lSpawn&8] &fSe ha establecido la ubicación al entrar al servidor."
+  voidEnabled: "&8[&6&lBasics&f&lSpawn&8] &fEl teletransporte al caer al vacío ha sido &a&lActivado &f."
+  voidDisabled: "&8[&6&lBasics&f&lSpawn&8] &fEl teletransporte al caer al vacío ha sido &a&lDesactivada &f."
+  voidEstablished: "&8[&6&lBasics&f&lSpawn&8] &fSe ha establecido la ubicación al caer al vacío."
   respawnEnabled: "&8[&6&lBasics&f&lSpawn&8] &fEl teletransporte de reaparición ha sido &a&lActivada &f."
   respawnDisabled: "&8[&6&lBasics&f&lSpawn&8] &fEl teletransporte de reaparición ha sido &c&lDesactivada &f."
   respawnOverrideBedEnabled: "&8[&6&lBasics&f&lSpawn&8] &fLa anulación de la cama en la reaparición ha sido &a&lActivada &f."

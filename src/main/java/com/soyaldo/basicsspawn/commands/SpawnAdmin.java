@@ -108,6 +108,37 @@ public class SpawnAdmin extends Command {
                     }
                 }
             }
+            case "void": {
+                if (args.length < 2) {
+                    Send.message(sender, langConfiguration.get("admin.emptyOption", "&cThe path &8'&7admin.emptyOption&8' &cis undefined."));
+                    return;
+                }
+
+                switch (args[1].toLowerCase()) {
+                    case "toggle": {
+                        boolean status = settings.getFileConfiguration().getBoolean("void.enable", false);
+                        if (status) {
+                            settings.getFileConfiguration().set("void.enable", false);
+                            Send.message(sender, langConfiguration.get("admin.voidDisabled", "&cThe path &8'&7admin.voidDisabled&8' &cis undefined."));
+                        } else {
+                            settings.getFileConfiguration().set("void.enable", true);
+                            Send.message(sender, langConfiguration.get("admin.voidEnabled", "&cThe path &8'&7admin.voidEnabled&8' &cis undefined."));
+                        }
+                        settings.save();
+                        return;
+                    }
+                    case "setlocation": {
+                        settings.getFileConfiguration().set("void.location", LocationUtil.parse(sender.getLocation(), true));
+                        settings.save();
+                        Send.message(sender, langConfiguration.get("admin.voidEstablished", "&cThe path &8'&7admin.voidEstablished&8' &cis undefined."));
+                        return;
+                    }
+                    default: {
+                        Send.message(sender, langConfiguration.get("admin.invalidOption", "&cThe path &8'&7admin.invalidOption&8' &cis undefined."), new String[][]{{"%option%", args[1]}});
+                        return;
+                    }
+                }
+            }
             case "respawn": {
                 if (args.length < 2) {
                     Send.message(sender, langConfiguration.get("admin.emptyOption", "&cThe path &8'&7admin.emptyOption&8' &cis undefined."));
@@ -205,11 +236,12 @@ public class SpawnAdmin extends Command {
         if (requester.hasPermission("basicsspawn.admin")) {
             switch (position) {
                 case 1:
-                    return "help,firstjoin,onjoin,respawn,spawn,status,reload,version";
+                    return "help,firstjoin,onjoin,void,respawn,spawn,status,reload,version";
                 case 2:
                     switch (previousArguments[0]) {
                         case "firstjoin":
                         case "onjoin":
+                        case "void":
                             return "toggle,setlocation";
                         case "respawn":
                             return "toggle,toggleoverridebed,setlocation";
@@ -282,6 +314,35 @@ public class SpawnAdmin extends Command {
                         } else {
                             settings.getFileConfiguration().set("onJoin.enable", true);
                             Send.message(sender, langConfiguration.get("admin.onJoinEnabled", "&cThe path &8'&7admin.onJoinEnabled&8' &cis undefined."));
+                        }
+                        settings.save();
+                        return;
+                    }
+                    case "setlocation": {
+                        Send.message(sender, langConfiguration.get("admin.onlyPlayersCanEstablishLocation", "&cThe path &8'&7admin.onlyPlayersCanEstablishLocation&8' &cis undefined."));
+                        return;
+                    }
+                    default: {
+                        Send.message(sender, langConfiguration.get("admin.invalidOption", "&cThe path &8'&7admin.invalidOption&8' &cis undefined."), new String[][]{{"%option%", args[1]}});
+                        return;
+                    }
+                }
+            }
+            case "void": {
+                if (args.length < 2) {
+                    Send.message(sender, langConfiguration.get("admin.emptyOption", "&cThe path &8'&7admin.emptyOption&8' &cis undefined."));
+                    return;
+                }
+
+                switch (args[1].toLowerCase()) {
+                    case "toggle": {
+                        boolean status = settings.getFileConfiguration().getBoolean("void.enable", false);
+                        if (status) {
+                            settings.getFileConfiguration().set("void.enable", false);
+                            Send.message(sender, langConfiguration.get("admin.voidDisabled", "&cThe path &8'&7admin.voidDisabled&8' &cis undefined."));
+                        } else {
+                            settings.getFileConfiguration().set("void.enable", true);
+                            Send.message(sender, langConfiguration.get("admin.voidEnabled", "&cThe path &8'&7admin.voidEnabled&8' &cis undefined."));
                         }
                         settings.save();
                         return;
@@ -387,11 +448,12 @@ public class SpawnAdmin extends Command {
     public String onConsoleTabComplete(ConsoleCommandSender requester, int position, String[] previousArguments) {
         switch (position) {
             case 1:
-                return "help,firstjoin,onjoin,respawn,spawn,status,reload,version";
+                return "help,firstjoin,onjoin,void,respawn,spawn,status,reload,version";
             case 2:
                 switch (previousArguments[0]) {
                     case "firstjoin":
                     case "onjoin":
+                    case "void":
                         return "toggle,setlocation";
                     case "respawn":
                         return "toggle,toggleoverridebed,setlocation";
